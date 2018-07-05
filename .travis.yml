@@ -2,6 +2,15 @@ language: python
 python:
   - "2.7"
   - "3.4"
+
+before_script:
+  - pip install nodeenv
+  - nodeenv nodeenv
+  - . nodeenv/bin/activate
+  - npm install -g ajv-cli
+
 script:
   - ./scripts/lint-json-dirs
   - pytest
+  - ajv compile -s schemas/tool.json
+  - ajv compile -s schemas/business_rule.json

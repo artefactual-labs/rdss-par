@@ -7,7 +7,7 @@ before_script:
   - pip install nodeenv
   - nodeenv nodeenv
   - . nodeenv/bin/activate
-  - npm install -g ajv-cli
+  - npm install ajv-cli
 
 script:
   - ./scripts/lint-json-dirs

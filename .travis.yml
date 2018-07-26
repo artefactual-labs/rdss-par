@@ -2,12 +2,14 @@ language: python
 python:
   - "2.7"
   - "3.4"
+env:
+  - NODE_VERSION="10.7"
 
-before_script:
-  - pip install nodeenv
-  - nodeenv nodeenv
-  - . nodeenv/bin/activate
-  - npm install ajv-cli
+before_install:
+  - nvm install $NODE_VERSION
+
+install:
+  - npm install -g ajv-cli
 
 script:
   - ./scripts/lint-json-dirs

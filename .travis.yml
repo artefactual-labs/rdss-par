@@ -15,5 +15,10 @@ install:
 script:
   - ./scripts/lint-json-dirs
   - pytest
+  - ajv compile -s schemas/types.json
   - ajv compile -s schemas/tool.json
-  - ajv compile -s schemas/business_rule.json
+  - ajv compile -s schemas/par_property.json
+  - ajv compile -s schemas/preservation_action_type.json
+  - ajv compile -s schemas/format.json -r schemas/types.json
+  - ajv compile -s schemas/preservation_action.json -r schemas/types.json -r schemas/preservation_action_type.json -r schemas/par_property.json -r schemas/tool.json
+  - ajv compile -s schemas/business_rule.json -r schemas/types.json -r schemas/preservation_action_type.json -r schemas/preservation_action.json -r schemas/par_property.json -r schemas/tool.json

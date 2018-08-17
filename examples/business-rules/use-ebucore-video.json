@@ -1,0 +1,36 @@
+{
+  "description": "EBU Core XML is preferred to MediaInfo XML when characterizing Quicktime Movie files.",
+  "formats": [
+    {
+      "guid": "bf5ae53e-ffb4-4c40-a4f2-5b8e7c53e602",
+      "name": "x-fmt/384",
+      "namespace": "http://www.nationalarchives.gov.uk/"
+    }
+  ],
+  "id": {
+    "guid": "e42aa5b2-5652-4a01-a037-7d0ae817a73d",
+    "name": "br/1",
+    "namespace": "http://modern-institution.edu/"
+  },
+  "notes": "Modern Institution has decided to adopt EBUCore as the primary metadata schema for describing technical characteristics of Video FIles.  Only EBUCore metadata is allowed. See http://modern-institution.edu/preservation_policies",
+  "preservationActionTypes": [
+    {
+      "id": {
+        "guid": "c48b8ec4-7128-4657-8f4f-298833ebd3b3",
+        "name": "http://id.loc.gov/vocabulary/preservation/eventType/mee",
+        "namespace": "url"
+      },
+      "label": "metadata extraction"
+    }
+  ],
+  "preservationActions": [
+    {
+      "preservationAction": {
+        "guid": "1caa0cde-e345-44ac-8d83-51afaa7427b6",
+        "name": "MediaInfo3",
+        "namespace": "http://www.parcore.org/preservation-actions"
+      },
+      "priority": 1
+    }
+  ]
+}

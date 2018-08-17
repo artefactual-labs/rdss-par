@@ -1,5 +1,5 @@
 {
-  "description": "EBU Core XML is preferred to MediaInfo XML when characterizing Quicktime Movie files.",
+  "description": "EBU Core XML is the required format for recording technical characteristics of Quicktime Movie files.",
   "formats": [
     {
       "guid": "bf5ae53e-ffb4-4c40-a4f2-5b8e7c53e602",
@@ -12,7 +12,7 @@
     "name": "br/1",
     "namespace": "http://modern-institution.edu/"
   },
-  "notes": "Modern Institution has decided to adopt EBUCore as the primary metadata schema for describing technical characteristics of Video FIles.  Only EBUCore metadata is allowed. See http://modern-institution.edu/preservation_policies",
+  "notes": "Modern Institution has decided to adopt EBUCore as the primary metadata schema for describing technical characteristics of Quicktime Video Files.  Only EBUCore metadata is allowed. See http://modern-institution.edu/preservation_policies",
   "preservationActionTypes": [
     {
       "id": {

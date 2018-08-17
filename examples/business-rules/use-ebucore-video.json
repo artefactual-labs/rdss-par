@@ -32,5 +32,14 @@
       },
       "priority": 1
     }
-  ]
+  ],
+  "rawOutputsRetrieved": [
+    {
+      "outputRaw": {
+        "description": "EBUCore XML output from MediaInfo",
+        "name": "EBUCore",
+        "value": "XML"
+      }
+    }
+  ]     
 }
